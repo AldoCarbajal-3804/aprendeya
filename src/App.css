@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
+
+:root {
+  --primary-color: #547798;
+  --secondary: #14274A;
+  --black: #141414;
+  --white: #fff;
+}
+
+* {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 65%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+}
+
+
+section {
+  padding: 5rem;
+}
+
+.titulo {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* ------------------Efecto del boton------ */
+.btn {
+  margin-top: 1rem;
+  color: var(--secondary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: var(--primary-color);
+  padding: 1.2rem 4.5rem;
+  border-radius: .5rem;
+}
+
+
+/* ----------------------- Estilos para la sección header ----------------------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--secondary);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+.header .logo i {
+  color: var(--primary-color);
+  padding-right: .5rem;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: var(--white);
+  margin: 0 1rem;
+  padding-block: 1rem;
+}
+
+
+.header .navbar a:hover {
+  color: var(--primary-color);
+}
+
+.header .navbar .hover {
+  position: relative;
+  max-width: max-content;
+}
+
+
+
+.header .iconos div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+#menu-btn {
+  display: none;
+}
+
+
+
+/* ----------------------- Estilos para la sección inicio ----------------------- */
+
+.inicio {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.9)), url('/public/inicio.jpg');
+  background-position: center;
+}
+
+.inicio .contenido {
+  max-width: 50rem;
+}
+
+.inicio .contenido h3 {
+  font-size: 5rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.inicio .contenido p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+/* ----------------------- Estilos para la sección sobre la plataforma ----------------------- */
+
+.sobre .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre .container .sobre-imagen {
+  position: relative;
+  flex: 1 1 40rem;
+}
+
+.sobre .container .sobre-imagen img {
+  width: 80%;
+}
+
+.sobre .container .sobre-imagen .sobre-img {
+  position: absolute;
+  bottom: -10rem;
+  right: -1rem;
+  width: 25rem;
+  padding-block: 5rem;
+}
+
+.sobre .container .sobre-contenido {
+  flex: 1 1 50rem;
+  padding-left: 6rem;
+  padding-top: 8rem;
+}
+
+.sobre .container .sobre-contenido h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.sobre .container .sobre-contenido p {
+  font-size: 1.6rem;
+  color: #444;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+/* ----------------------- Estilos para la sección categorias ----------------------- */
+
+.categorias .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.categorias .box-container .box {
+  padding: 3rem 2rem;
+  text-align: center;
+  border: .1rem solid var(--primary-color);
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.categorias .box-container .box img {
+  height: 10rem;
+  margin-bottom: .7rem;
+}
+
+.categorias .box-container .box h3 {
+  font-size: 1.7rem;
+  color: #444;
+  padding: .5rem 0;
+  text-transform: capitalize;
+}
+
+
+.categorias .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+
+
+/* ----------------------- Estilos para la sección cursos ----------------------- */
+
+.cursos .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.cursos .box-container .box .imagen {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.cursos .box-container .box .imagen img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cursos .box-container .box:hover .imagen img {
+  transform: scale(1.1);
+}
+
+.cursos .box-container .box .imagen h3 {
+  font-size: 1.5rem;
+  color: #444;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .5rem 1.5rem;
+  background: var(--white);
+}
+
+.cursos .box-container .box .contenido {
+  padding: 2rem;
+  position: relative;
+  border: 0.1rem solid var(--primary-color);
+}
+
+.cursos .box-container .box .contenido p {
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 2;
+}
+
+.cursos .box-container .box .contenido h3 {
+  font-size: 2rem;
+  color: #444;
+}
+
+
+/* ----------------------- Estilos para la sección contacto ----------------------- */
+
+.contacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contacto .formulario .imagen {
+  flex: 1 1 40rem;
+}
+
+.contacto .formulario .imagen img {
+  width: 100%;
+}
+
+.contacto .formulario form {
+  flex: 1 1 40rem;
+  border: 0.1rem solid var(--primary-color);
+  padding: 2rem;
+}
+
+.contacto .formulario form h3 {
+  font-size: 2.5rem;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+.contacto .formulario form .box {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.4rem;
+  border: .1rem solid var(--primary-color);
+  margin: .7rem 0;
+}
+
+.contacto .formulario form .box:focus {
+  color: var(--primary-color);
+}
+
+.contacto .formulario form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+/* ----------------------- Estilos para la sección footer ----------------------- */
+
+.footer {
+  background: var(--secondary);
+  text-align: center;
+}
+
+.footer .derechos {
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer .derechos span {
+  color: var(--primary-color);
+}
+
+/* ----------------------- Media query para la responsividad ----------------------- */
+
+@media (max-width:991px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 4rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--secondary);
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 1rem 2.5rem;
+    display: block;
+  }
+
+  .inicio .contenido h3 {
+    font-size: 3rem;
+  }
+
+  .sobre .container .sobre-contenido {
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width:450px) {
+  html {
+    font-size: 50%;
+  }
+}
