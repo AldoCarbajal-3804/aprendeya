@@ -56,6 +56,24 @@ const Cursos = () => {
       sesiones: '30 Sesiones',
       duracion: '28h 52m 17s',
     },
+    {
+      imagen: '/curso-7.png',
+      nivel: 'Avanzado',
+      precio: 'S/. 70.00',
+      fecha: 'Actualizado 17/11/2024',
+      titulo: 'Comunicaciones de Datos',
+      sesiones: '25 sesiones',
+      duracion: '30h 40m 23s'
+    },
+    {
+      imagen: '/curso-8.png',
+      nivel: 'Avanzado',
+      precio: 'S/. 64.30',
+      fecha: 'Actualizado 18/10/2024',
+      titulo: 'Ciberseguridad con cifrados',
+      sesiones: '20 sesiones',
+      duracion: '25h 50m 45s'
+    }
   ];
 
   return (

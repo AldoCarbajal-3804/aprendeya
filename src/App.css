@@ -314,6 +314,19 @@ section {
   resize: none;
 }
 
+/* Estilos para el mensaje de error */
+.error {
+  color: #ff4d4d;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.input-error {
+  border-color: #ff4d4d; 
+  background-color: #ffe6e6; 
+}
+
 /* ----------------------- Estilos para la sección footer ----------------------- */
 
 .footer {

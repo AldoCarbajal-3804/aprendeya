@@ -11,6 +11,7 @@ import Sobre from './components/Sobre';
 import Cursos from './components/Cursos';  
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
+import BotonArriba from './funciones/boton_arriba';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
       <Cursos />
       <Contacto/>
       <Footer />
+      <BotonArriba/>
     </div>
   );
 }
